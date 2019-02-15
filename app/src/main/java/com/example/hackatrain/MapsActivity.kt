@@ -1,7 +1,9 @@
 package com.example.hackatrain
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -40,4 +42,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
     }
+
+    fun gotoAboutMe(view: View){
+        var intent = Intent(this, AboutMeActivity::class.java)
+//        intent.putExtra("name", name)
+
+        startActivity(intent)
+    }
+
 }

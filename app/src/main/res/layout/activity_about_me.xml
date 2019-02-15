@@ -9,7 +9,108 @@
 
     <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="395dp"
-            android:layout_height="643dp" tools:layout_editor_absoluteY="8dp" tools:layout_editor_absoluteX="8dp">
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:id="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    >
+        <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp" app:srcCompat="@drawable/person_2" android:id="@+id/imageView3"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_margin="20dp"
+        />
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="5">
+            <Button
+                    android:text="สร้างภารกิจ"
+                    android:layout_gravity="end"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" android:id="@+id/button2" android:layout_width="200dp"
+                    android:textColor="@android:color/white" android:background="@color/colorPrimary"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView3" android:textSize="18sp"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView4" android:textSize="18sp"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView5" android:textSize="18sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/linearLayout2" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        <TextView
+                android:text="ประวัติการทำภาระกิจ "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView6" android:textSize="18sp"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="100dp">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/m_name_1"
+                    android:text="ชื่อภาระกิจ : สัมผัสหมอกที่อุโมงรถไฟขุนตาล และเขียนประสบการณ์ "
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/colorPrimary"/>
+            <TextView
+                    android:text="สถานที่ : อุโมงรถไฟขุนตาล "
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content" android:id="@+id/m_place_1"
+                    android:textColor="@color/colorPrimary"/>
+            <TextView
+                    android:text="วันที่ : 14 กุมภาพันธ์  2562"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/m_date_1"
+                    android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="100dp">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/m_name_2"
+                    android:text="ชื่อภาระกิจ : สัมผัสหมอกที่อุโมงรถไฟขุนตาล และเขียนประสบการณ์ "
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/colorPrimary"/>
+            <TextView
+                    android:text="สถานที่ : อุโมงรถไฟขุนตาล "
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content" android:id="@+id/m_place_2"
+                    android:textColor="@color/colorPrimary"/>
+            <TextView
+                    android:text="วันที่ : 14 กุมภาพันธ์  2562"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/m_date_2"
+                    android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
